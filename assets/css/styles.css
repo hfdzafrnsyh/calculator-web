@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: cursive;
+    background-color: #b3aeb5;;
+}
+
+.heading h1{
+    text-align: center;
+    color: #035bce;
+    margin: 20px 20px;
+}
+.display{
+    width: 100%;
+    background-color: #efeeee;
+    color: #ff7504;
+    border: 1px solid #808080;
+    font-size:  2em;
+    padding: 10px 20px;
+}
+
+.flex-container-column {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 800px;
+    text-align: right;
+
+
+}
+
+.flex-row {
+    display:flex;
+}
+
+
+.button {
+    flex-basis: 25%;
+    padding: 40px;
+    border: 1px solid #2d2d2d;
+    text-align: center;
+    font-size: 1.5em;
+    background: #808080;
+    color: white;
+    cursor: pointer;
+}
+
+.double {
+    flex-basis:50% ;
+}
+
+.operator,
+.negative,
+.equals {
+    background-color: #035bce;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+    padding: 30px;
+    background-color: #2a363b;
+    margin-top: 20px;
+}
+
+.button:hover {
+    font-weight: bold;
+    background-color: #ff7504;
+   
+}
+
+.history {
+    width: 80%;
+    overflow: scroll;
+    margin: 30px auto 0 auto;
+    color: #efeeee;
+    
+}
+
+.history h2{
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+ 
+ }
+
+ th,
+ td {
+    text-align: center;
+    padding: 16px;
+ }
+
+ th {
+    background-color: #035bce;
+   
+ }
+  
+ tr:nth-child(even) {
+    background-color: #035bce;
+ }
+
+
+@media screen and (max-width:513px) {
+    .button{
+        padding:5px;
+    }
+    .flex-container-column{
+        width: 100%;
+    }
+
+    .history {
+        width: 100%;
+    }
+}
